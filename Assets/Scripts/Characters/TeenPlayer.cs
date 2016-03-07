@@ -36,7 +36,7 @@ public class TeenPlayer : GenericPlayer {
 		// Animations
 		if (firstJump)
 			animator.CrossFade("donny_jump", 0f);
-		else if (h < 0.4f && h > -0.4f)
+		else if (h < 0.5f && h > -0.5f)
 		{
 			if (v > 0)
 			{
