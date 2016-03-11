@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: fa3fd67046d97234788911a0e3e445f5
+timeCreated: 1457669286
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: donny_attack_straight-sheet_0
+    21300002: donny_attack_straight-sheet_1
+    21300004: donny_attack_straight-sheet_2
+    21300006: donny_attack_straight-sheet_3
+    21300008: donny_attack_straight-sheet_4
+    21300010: donny_attack_straight-sheet_5
+    21300012: donny_attack_straight-sheet_6
+    21300014: donny_attack_straight-sheet_7
+    21300016: donny_attack_straight-sheet_8
+    21300018: donny_attack_straight-sheet_9
+    21300020: donny_attack_straight-sheet_10
+    21300022: donny_attack_straight-sheet_11
+    21300024: donny_attack_straight-sheet_12
+    21300026: donny_attack_straight-sheet_13
+    21300028: donny_attack_straight-sheet_14
+    21300030: donny_attack_straight-sheet_15
+    21300032: donny_attack_straight-sheet_16
+    21300034: donny_attack_straight-sheet_17
+    21300036: donny_attack_straight-sheet_18
+    21300038: donny_attack_straight-sheet_19
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: donny_attack_straight-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 15}
+        - {x: -7, y: 14}
+        - {x: -7, y: -17}
+        - {x: 6, y: -17}
+        - {x: 7, y: -12}
+        - {x: 7, y: 9}
+        - {x: 4, y: 15}
+    - name: donny_attack_straight-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: 15}
+        - {x: -2, y: 15}
+        - {x: -6, y: 13}
+        - {x: -7, y: 10}
+        - {x: -7, y: -12}
+        - {x: -5, y: -17}
+        - {x: 6, y: -17}
+        - {x: 6, y: 12}
+    - name: donny_attack_straight-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: 15}
+        - {x: -7, y: 13}
+        - {x: -8, y: 8}
+        - {x: -8, y: -12}
+        - {x: -6, y: -17}
+        - {x: 6, y: -17}
+        - {x: 6, y: 11}
+        - {x: 3, y: 15}
+    - name: donny_attack_straight-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -8, y: -16}
+        - {x: -4, y: -17}
+        - {x: 6, y: -17}
+        - {x: 6, y: 10}
+        - {x: 4, y: 14}
+    - name: donny_attack_straight-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 13}
+        - {x: -6, y: 11}
+        - {x: -9, y: -8}
+        - {x: -9, y: -15}
+        - {x: -8, y: -17}
+        - {x: 7, y: -17}
+        - {x: 7, y: 6}
+        - {x: 4, y: 13}
+    - name: donny_attack_straight-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 4}
+        - {x: 3, y: 12}
+        - {x: -2, y: 12}
+        - {x: -7, y: 10}
+        - {x: -10, y: -7}
+        - {x: -10, y: -17}
+        - {x: 7, y: -17}
+    - name: donny_attack_straight-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 13}
+        - {x: -4, y: 12}
+        - {x: -7, y: 10}
+        - {x: -10, y: 1}
+        - {x: -10, y: -17}
+        - {x: 6, y: -17}
+        - {x: 7, y: -15}
+        - {x: 6, y: 1}
+        - {x: 4, y: 9}
+    - name: donny_attack_straight-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: -14}
+        - {x: -10, y: -17}
+        - {x: 7, y: -17}
+        - {x: 7, y: 6}
+        - {x: 6, y: 11}
+        - {x: 1, y: 13}
+        - {x: -6, y: 13}
+        - {x: -11, y: -3}
+    - name: donny_attack_straight-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 13}
+        - {x: -12, y: 0}
+        - {x: -12, y: -14}
+        - {x: -7, y: -17}
+        - {x: 6, y: -17}
+        - {x: 7, y: -15}
+        - {x: 6, y: 11}
+        - {x: 2, y: 13}
+    - name: donny_attack_straight-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 13}
+        - {x: -18, y: 3}
+        - {x: -18, y: -5}
+        - {x: -9, y: -17}
+        - {x: 7, y: -17}
+        - {x: 7, y: 8}
+        - {x: 4, y: 13}
+    - name: donny_attack_straight-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 19}
+        - {x: -22, y: -13}
+        - {x: -20, y: -17}
+        - {x: 5, y: -17}
+        - {x: 7, y: -15}
+        - {x: 7, y: 19}
+    - name: donny_attack_straight-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 24}
+        - {x: -17, y: 14}
+        - {x: -17, y: 11}
+        - {x: -7, y: -16}
+        - {x: -3, y: -17}
+        - {x: 8, y: -17}
+        - {x: 8, y: 20}
+        - {x: 3, y: 24}
+    - name: donny_attack_straight-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 24}
+        - {x: -9, y: 23}
+        - {x: -5, y: -16}
+        - {x: -5, y: -17}
+        - {x: 4, y: -17}
+        - {x: 12, y: -14}
+        - {x: 13, y: -6}
+        - {x: 13, y: 24}
+    - name: donny_attack_straight-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 24}
+        - {x: -5, y: 6}
+        - {x: -5, y: -15}
+        - {x: -4, y: -17}
+        - {x: 9, y: -17}
+        - {x: 14, y: -15}
+        - {x: 20, y: 16}
+        - {x: 20, y: 24}
+    - name: donny_attack_straight-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 17}
+        - {x: 18, y: 19}
+        - {x: 4, y: 19}
+        - {x: -4, y: 13}
+        - {x: -5, y: 7}
+        - {x: -5, y: -17}
+        - {x: 10, y: -17}
+        - {x: 14, y: -16}
+        - {x: 24, y: 4}
+        - {x: 24, y: 15}
+    - name: donny_attack_straight-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 13}
+        - {x: -3, y: 12}
+        - {x: -5, y: -8}
+        - {x: -5, y: -17}
+        - {x: 26, y: -17}
+        - {x: 26, y: 8}
+        - {x: 24, y: 11}
+        - {x: 16, y: 12}
+        - {x: 12, y: 13}
+    - name: donny_attack_straight-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 12}
+        - {x: -1, y: 12}
+        - {x: -5, y: -6}
+        - {x: -5, y: -17}
+        - {x: 21, y: -17}
+        - {x: 28, y: -13}
+        - {x: 28, y: 9}
+        - {x: 24, y: 11}
+    - name: donny_attack_straight-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 11}
+        - {x: -1, y: 11}
+        - {x: -5, y: 2}
+        - {x: -5, y: -17}
+        - {x: 18, y: -17}
+        - {x: 28, y: -12}
+        - {x: 28, y: -2}
+        - {x: 27, y: 4}
+    - name: donny_attack_straight-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 10}
+        - {x: 1, y: 10}
+        - {x: -3, y: -2}
+        - {x: -3, y: -17}
+        - {x: 24, y: -17}
+        - {x: 27, y: -14}
+        - {x: 27, y: -1}
+    - name: donny_attack_straight-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 0
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: -17}
+        - {x: 17, y: -17}
+        - {x: 17, y: -1}
+        - {x: 15, y: 10}
+        - {x: 1, y: 10}
+        - {x: -3, y: 0}
+      - - {x: 20, y: -9}
+        - {x: 23, y: -8}
+        - {x: 23, y: -5}
+        - {x: 20, y: -4}
+        - {x: 18, y: -6}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

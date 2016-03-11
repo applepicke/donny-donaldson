@@ -2,15 +2,11 @@
 using System.Collections;
 
 public class TeenPlayer : GenericPlayer {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	protected void Update()
 	{
 		CheckJump();
+		CheckAttack();
 	}
 
 	// Update is called once per frame
@@ -27,6 +23,8 @@ public class TeenPlayer : GenericPlayer {
 		var h = Input.GetAxis("Horizontal");
 		var v = Input.GetAxis("Vertical");
 
+		var attack_btn = Input.GetButtonDown("Fire3");
+
 		// Look up 
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("donny_look_up"))
 			cameraManager.LookUp();
@@ -34,16 +32,18 @@ public class TeenPlayer : GenericPlayer {
 			cameraManager.LookNormal();
 
 		// Animations
-		if (firstJump)
+		if (attacking)
+			animator.CrossFade("donny_attack_overhead", 0f);
+		else if (firstJump)
 			animator.CrossFade("donny_jump", 0f);
 		else if (h < 0.5f && h > -0.5f)
 		{
-			if (v > 0)
+			if (v > 0.5f)
 			{
 				animator.CrossFade("donny_look_up", 0f);
 				cameraManager.LookUp();
 			}
-			else if (v < 0)
+			else if (v < -0.5f)
 			{
 				animator.CrossFade("donny_duck", 0f);
 				cameraManager.LookDown();

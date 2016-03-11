@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 473368}
   - 114: {fileID: 11432676}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: menuManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 403738}
   - 114: {fileID: 11456456}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436264}
   - 114: {fileID: 11404822}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: managers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428770}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: musicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - 114: {fileID: 11419424}
   - 114: {fileID: 11432288}
   - 114: {fileID: 11458498}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: menu_event_system
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119976}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.35806, y: 4.982303, z: 0}
+  m_LocalPosition: {x: -4.31, y: 6.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473368}
