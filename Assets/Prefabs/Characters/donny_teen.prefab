@@ -205,11 +205,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b55669bd47e844c99d489a393b36c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 100
+  force: 90
   slowDown: 0.97
-  maxSpeed: 20
-  jumpPower: 60
-  mainAttackCooldown: 0.12
+  maxVelocity: 30
+  airSlowdown: 0.5
+  jumpPower: 50
+  mainAttackCooldown: 0.05
 --- !u!212 &21270688
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -9,7 +9,8 @@ public class GenericPlayer : MonoBehaviour
 	// Moving
 	public float force = 150f;
 	public float slowDown = 0.95f;
-	public float maxSpeed = 10f;
+	public float maxVelocity = 10f;
+	public float airSlowdown = 0.5f;
 
 	protected bool facingRight = true;
 
@@ -53,7 +54,7 @@ public class GenericPlayer : MonoBehaviour
 	// Update is called once per frame
 	protected void FixedUpdate()
 	{
-		if (isGrounded())
+		if (IsGrounded())
 		{
 			firstJump = false;
 			secondJump = false;
@@ -66,7 +67,7 @@ public class GenericPlayer : MonoBehaviour
 		return animator.GetCurrentAnimatorStateInfo(0).IsName(name);
 	}
 
-	protected bool isGrounded()
+	protected bool IsGrounded()
 	{
 		return Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 	}

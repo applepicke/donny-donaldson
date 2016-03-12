@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class TeenPlayer : GenericPlayer {
 	
@@ -22,24 +23,7 @@ public class TeenPlayer : GenericPlayer {
 	// Attacking
 	public void setAttackCollider(int stage)
 	{
-		/*
-		switch (stage) {
-			case 0:
-				attackCollider.offset = new Vector2(-0.3514208f, 0.07911479f);
-				attackCollider.size = new Vector2(0.4357498f, 0.03979646f);
-				break;
-			case 1:
-				attackCollider.offset = new Vector2(-0.5085995f, 0.1079786f);
-				attackCollider.size = new Vector2(0.4845567f, 0.04541113f);
-				break;
-			case 2:
-				attackCollider.offset = new Vector2(-0.5085995f, 0.1079786f);
-				attackCollider.size = new Vector2(0.4845567f, 0.04541113f);
-				break;
-			default:
-				break;
-		}
-		*/
+
 	}
 
 	protected void Animate()
@@ -83,12 +67,16 @@ public class TeenPlayer : GenericPlayer {
 		var h = Input.GetAxis("Horizontal");
 		var v = Input.GetAxis("Vertical");
 
-		// Movement
-		if (body.velocity.magnitude < maxSpeed)
-		{
-			var forceVector = Vector2.right * h * force;
-			body.AddForce(forceVector);
-		}
+		var localForce = force;
+		var currentVelocity = body.velocity.magnitude;
+
+		localForce *= (maxVelocity - currentVelocity) / maxVelocity;
+
+		if (!IsGrounded())
+			localForce = force * airSlowdown;
+
+		var forceVector = Vector2.right * h * localForce;
+		body.AddForce(forceVector);
 	
 		body.velocity *= slowDown;
 
