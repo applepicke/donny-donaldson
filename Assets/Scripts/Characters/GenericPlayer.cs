@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using InControl;
 
 public class GenericPlayer : MonoBehaviour
 {
@@ -26,7 +27,8 @@ public class GenericPlayer : MonoBehaviour
 
 	// Objects
 	protected Rigidbody2D body;
-	private new BoxCollider2D collider;
+	protected new BoxCollider2D collider;
+	protected BoxCollider2D attackCollider;
 	protected Animator animator;
 	protected CameraManager cameraManager;
 
@@ -38,6 +40,9 @@ public class GenericPlayer : MonoBehaviour
 		groundCheck = transform.Find("groundCheck");
 		animator = transform.GetComponent<Animator>();
 		cameraManager = GameObject.Find("player_camera").GetComponent<CameraManager>();
+
+		//Attacking
+		attackCollider = GameObject.Find("attackCollider").GetComponent<BoxCollider2D>();
 	}
 
 	void Awake()
@@ -68,10 +73,10 @@ public class GenericPlayer : MonoBehaviour
 
 	protected void CheckJump()
 	{
-		if (Input.GetButtonDown("Jump"))
+		if (InputManager.ActiveDevice.Action1.WasPressed)
 			jumpPressed = true;
 
-		if (Input.GetButtonUp("Jump"))
+		if (InputManager.ActiveDevice.Action1.WasReleased)
 			jumpPressed = false;
 	}
 
@@ -86,7 +91,7 @@ public class GenericPlayer : MonoBehaviour
 		if (mainAttackCooldownCounter > 0)
 			mainAttackCooldownCounter -= Time.deltaTime;
 
-		if (Input.GetButtonDown("Attack") && mainAttackCooldownCounter <= 0)
+		if (InputManager.ActiveDevice.Action3.WasPressed && mainAttackCooldownCounter <= 0)
 			attacking = true;
 	}
 

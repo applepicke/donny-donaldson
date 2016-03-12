@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Timers;
 using UnityEngine.EventSystems;
+using InControl;
 
 public class MenuManager : MonoBehaviour
 {
@@ -26,8 +27,8 @@ public class MenuManager : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		var startDown = Input.GetButtonDown("Start");
-		var startUp = Input.GetButtonUp("Start");
+		var startDown = InputManager.ActiveDevice.Command.WasPressed;
+		var startUp = InputManager.ActiveDevice.Command.WasReleased;
 
 
 		if (startDown)
