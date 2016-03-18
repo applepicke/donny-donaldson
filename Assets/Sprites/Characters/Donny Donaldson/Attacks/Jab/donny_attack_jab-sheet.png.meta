@@ -1,0 +1,486 @@
+fileFormatVersion: 2
+guid: ca5bf40f9e80fb64fa6042e6bc32e1c4
+timeCreated: 1458075766
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: donny_attack_jab-sheet_0
+    21300002: donny_attack_jab-sheet_1
+    21300004: donny_attack_jab-sheet_2
+    21300006: donny_attack_jab-sheet_3
+    21300008: donny_attack_jab-sheet_4
+    21300010: donny_attack_jab-sheet_5
+    21300012: donny_attack_jab-sheet_6
+    21300014: donny_attack_jab-sheet_7
+    21300016: donny_attack_jab-sheet_8
+    21300018: donny_attack_jab-sheet_9
+    21300020: donny_attack_jab-sheet_10
+    21300022: donny_attack_jab-sheet_11
+    21300024: donny_attack_jab-sheet_12
+    21300026: donny_attack_jab-sheet_13
+    21300028: donny_attack_jab-sheet_14
+    21300030: donny_attack_jab-sheet_15
+    21300032: donny_attack_jab-sheet_16
+    21300034: donny_attack_jab-sheet_17
+    21300036: donny_attack_jab-sheet_18
+    21300038: donny_attack_jab-sheet_19
+    21300040: donny_attack_jab-sheet_20
+    21300042: donny_attack_jab-sheet_21
+    21300044: donny_attack_jab-sheet_22
+    21300046: donny_attack_jab-sheet_23
+    21300048: donny_attack_jab-sheet_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: donny_attack_jab-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4, y: -17}
+        - {x: 6, y: -16}
+        - {x: 6, y: 6}
+        - {x: 3, y: 13}
+        - {x: -3, y: 13}
+        - {x: -7, y: 11}
+        - {x: -8, y: 6}
+        - {x: -8, y: -16}
+        - {x: -6, y: -17}
+        - {x: -3, y: -16}
+        - {x: -1, y: -12}
+        - {x: 0, y: -15}
+        - {x: 1, y: -17}
+    - name: donny_attack_jab-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 13}
+        - {x: -9, y: 11}
+        - {x: -9, y: -17}
+        - {x: 5, y: -17}
+        - {x: 5, y: 2}
+        - {x: 2, y: 10}
+        - {x: -2, y: 14}
+    - name: donny_attack_jab-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 14}
+        - {x: -6, y: 14}
+        - {x: -7, y: 13}
+        - {x: -7, y: -16}
+        - {x: -6, y: -17}
+        - {x: 2, y: -17}
+        - {x: 5, y: -15}
+        - {x: 7, y: -8}
+        - {x: 7, y: 7}
+        - {x: 5, y: 13}
+    - name: donny_attack_jab-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 15}
+        - {x: -7, y: 14}
+        - {x: -7, y: -17}
+        - {x: 7, y: -17}
+        - {x: 7, y: 10}
+        - {x: 3, y: 15}
+    - name: donny_attack_jab-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 16}
+        - {x: -3, y: 16}
+        - {x: -6, y: 13}
+        - {x: -6, y: -17}
+        - {x: 2, y: -17}
+        - {x: 10, y: -12}
+        - {x: 10, y: 2}
+        - {x: 9, y: 8}
+    - name: donny_attack_jab-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 16}
+        - {x: -6, y: -17}
+        - {x: 1, y: -17}
+        - {x: 11, y: -14}
+        - {x: 11, y: 7}
+        - {x: 9, y: 16}
+    - name: donny_attack_jab-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 16}
+        - {x: -1, y: 16}
+        - {x: -5, y: 14}
+        - {x: -6, y: -4}
+        - {x: -6, y: -17}
+        - {x: 9, y: -17}
+        - {x: 11, y: -16}
+        - {x: 12, y: -11}
+        - {x: 13, y: 5}
+        - {x: 13, y: 9}
+    - name: donny_attack_jab-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 16}
+        - {x: -4, y: 14}
+        - {x: -5, y: -3}
+        - {x: -5, y: -17}
+        - {x: 5, y: -17}
+        - {x: 15, y: -11}
+        - {x: 16, y: -5}
+        - {x: 16, y: 12}
+        - {x: 9, y: 16}
+    - name: donny_attack_jab-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 22, y: 14}
+        - {x: 0, y: 14}
+        - {x: 0, y: -17}
+        - {x: 8, y: -17}
+        - {x: 18, y: -13}
+        - {x: 26, y: -5}
+        - {x: 26, y: 11}
+    - name: donny_attack_jab-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -16}
+        - {x: 17, y: -14}
+        - {x: 31, y: -6}
+        - {x: 31, y: 9}
+        - {x: 25, y: 13}
+        - {x: 1, y: 13}
+        - {x: 0, y: 12}
+        - {x: 0, y: -15}
+        - {x: 2, y: -17}
+        - {x: 5, y: -16}
+        - {x: 8, y: -11}
+        - {x: 10, y: -14}
+        - {x: 12, y: -16}
+    - name: donny_attack_jab-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7, y: 11}
+        - {x: 2, y: 10}
+        - {x: 1, y: -3}
+        - {x: 1, y: -17}
+        - {x: 26, y: -17}
+        - {x: 32, y: -13}
+        - {x: 32, y: 3}
+        - {x: 16, y: 11}
+    - name: donny_attack_jab-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -3}
+        - {x: 32, y: 8}
+        - {x: 25, y: 11}
+        - {x: 6, y: 11}
+        - {x: 3, y: 10}
+        - {x: 1, y: -13}
+        - {x: 1, y: -16}
+        - {x: 3, y: -17}
+        - {x: 6, y: -16}
+        - {x: 14, y: -17}
+        - {x: 22, y: -17}
+    - name: donny_attack_jab-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -3}
+        - {x: 32, y: 8}
+        - {x: 17, y: 12}
+        - {x: 10, y: 12}
+        - {x: 5, y: 11}
+        - {x: 1, y: -13}
+        - {x: 1, y: -15}
+        - {x: 3, y: -17}
+        - {x: 6, y: -16}
+        - {x: 14, y: -17}
+        - {x: 24, y: -17}
+    - name: donny_attack_jab-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -3}
+        - {x: 32, y: 8}
+        - {x: 17, y: 12}
+        - {x: 10, y: 12}
+        - {x: 5, y: 11}
+        - {x: 1, y: -13}
+        - {x: 1, y: -15}
+        - {x: 3, y: -17}
+        - {x: 6, y: -16}
+        - {x: 14, y: -17}
+        - {x: 24, y: -17}
+    - name: donny_attack_jab-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -3}
+        - {x: 32, y: 8}
+        - {x: 17, y: 12}
+        - {x: 10, y: 12}
+        - {x: 5, y: 11}
+        - {x: 1, y: -13}
+        - {x: 1, y: -15}
+        - {x: 3, y: -17}
+        - {x: 6, y: -16}
+        - {x: 14, y: -17}
+        - {x: 24, y: -17}
+    - name: donny_attack_jab-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: -3}
+        - {x: 32, y: 8}
+        - {x: 17, y: 12}
+        - {x: 10, y: 12}
+        - {x: 5, y: 11}
+        - {x: 1, y: -13}
+        - {x: 1, y: -15}
+        - {x: 3, y: -17}
+        - {x: 6, y: -16}
+        - {x: 14, y: -17}
+        - {x: 24, y: -17}
+    - name: donny_attack_jab-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6, y: 12}
+        - {x: 3, y: 5}
+        - {x: 1, y: -4}
+        - {x: 1, y: -17}
+        - {x: 28, y: -17}
+        - {x: 32, y: -4}
+        - {x: 32, y: 8}
+        - {x: 17, y: 12}
+    - name: donny_attack_jab-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2, y: 15}
+        - {x: 0, y: 13}
+        - {x: 0, y: -17}
+        - {x: 20, y: -17}
+        - {x: 27, y: -12}
+        - {x: 27, y: 5}
+        - {x: 15, y: 15}
+    - name: donny_attack_jab-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 17}
+        - {x: -4, y: 15}
+        - {x: -5, y: -4}
+        - {x: -5, y: -17}
+        - {x: 5, y: -17}
+        - {x: 15, y: -11}
+        - {x: 16, y: -4}
+        - {x: 16, y: 11}
+        - {x: 8, y: 17}
+    - name: donny_attack_jab-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 7}
+        - {x: 3, y: 17}
+        - {x: -6, y: 17}
+        - {x: -6, y: -17}
+        - {x: -4, y: -17}
+        - {x: 0, y: -16}
+        - {x: 6, y: -14}
+        - {x: 10, y: -12}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
