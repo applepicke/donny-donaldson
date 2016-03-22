@@ -1,11 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Enemy : Movable {
 
+	// Animations
+	protected string deathAnimation;
+	protected string walkingAnimation;
+
 	// Taking Damage
-	public float cooldown;
-	private float cooldownCounter;
+	public float health;
+	private bool dead = false;
 
 	// Movement
 	public float moveSpeed;
@@ -16,53 +21,87 @@ public class Enemy : Movable {
 	// Object References
 	protected Rigidbody2D body;
 	protected GameObject player;
+	protected Animator animator;
 
-	protected BoxCollider2D attackCollider;
+	protected GameObject[] weapons;
 	protected new BoxCollider2D collider;
 
-	protected GameObject blood;
+	protected Blood blood;
 
 	// Use this for initialization
 	protected void Start () {
 		scoreManager = GameObject.Find("scoreManager").GetComponent<ScoreManager>();
 		body = gameObject.GetComponent<Rigidbody2D>();
 		player = GameObject.Find("donny_teen");
+		animator = gameObject.GetComponent<Animator>();
 
-		attackCollider = GameObject.Find("attackCollider").GetComponent<BoxCollider2D>();
+		weapons = GameObject.FindGameObjectsWithTag("Weapon");
 		collider = gameObject.GetComponent<BoxCollider2D>();
 
-		blood = transform.Find("blood").gameObject;
+		blood = transform.Find("blood").gameObject.GetComponent<Blood>();
 	}
-	
+
 	// Update is called once per frame
 	protected void Update () {
 
-		CheckAttackCollisions();
+		if (!dead)
+		{
+			CheckAttackCollisions();
+			CheckDead();
+		}
 		
 	}
 
 	protected void FixedUpdate()
 	{
-		Move();	
+
+		if (!dead)
+		{
+			Move();
+		}
+		
+	}
+
+	protected void CheckDead()
+	{
+		if (health <= 0)
+		{
+			dead = true;
+
+			Debug.Log(deathAnimation);
+
+			animator.Play(deathAnimation, -1, 0f);
+		}
 	}
 
 	protected void CheckAttackCollisions()
 	{
-		var attack = attackCollider.GetComponent<BoxCollider2D>();
-
-		if (cooldownCounter > 0)
+		foreach (GameObject weaponObj in weapons)
 		{
-			cooldownCounter -= Time.deltaTime;
-			return;
-		}
-			
+			var attackCollider = weaponObj.GetComponent<BoxCollider2D>();
+			var weapon = weaponObj.GetComponent<Weapon>();
 
-		if (collider.bounds.Intersects(attack.bounds) && attack.enabled)
-		{
-			cooldownCounter = cooldown;
-			blood.SetActive(true);
-			scoreManager.addScore(10f);
+			if (!weapon.IsCool())
+				continue;
+
+			if (collider.bounds.Intersects(attackCollider.bounds) && attackCollider.enabled)
+			{
+				TakeHit(weapon);
+			}
 		}
+
+		
+	}
+
+	protected void TakeHit(Weapon weapon)
+	{
+		blood.Bleed();
+		weapon.Warm();
+
+		// TODO: Figure out which body part is hit
+		scoreManager.HitBody();
+
+		health -= weapon.damage;
 	}
 
 	protected void Move()

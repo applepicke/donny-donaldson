@@ -32,7 +32,6 @@ public class GenericPlayer : Movable
 	// Objects
 	protected Rigidbody2D body;
 	protected new BoxCollider2D collider;
-	protected BoxCollider2D attackCollider;
 	protected Animator animator;
 	protected CameraManager cameraManager;
 
@@ -44,9 +43,6 @@ public class GenericPlayer : Movable
 		groundCheck = transform.Find("groundCheck");
 		animator = transform.GetComponent<Animator>();
 		cameraManager = GameObject.Find("player_camera").GetComponent<CameraManager>();
-
-		//Attacking
-		attackCollider = GameObject.Find("attackCollider").GetComponent<BoxCollider2D>();
 	}
 
 	void Awake()

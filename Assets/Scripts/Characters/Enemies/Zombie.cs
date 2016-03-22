@@ -7,6 +7,8 @@ public class Zombie : Enemy {
 	protected new void Start ()
 	{
 		base.Start();
+		walkingAnimation = "zombie_walking";
+		deathAnimation = "zombie_dying";
 	}
 	
 	// Update is called once per frame

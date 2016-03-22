@@ -38,7 +38,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &443916
 Transform:
   m_ObjectHideFlags: 1
@@ -101,7 +101,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139298}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98852bbfec3e2a3418526382a6e6be35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.35
+  health: 20
   moveSpeed: 0.5
 --- !u!212 &21261590
 SpriteRenderer:

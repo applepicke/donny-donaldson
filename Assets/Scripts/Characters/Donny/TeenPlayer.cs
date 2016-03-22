@@ -21,12 +21,6 @@ public class TeenPlayer : GenericPlayer {
 			Animate();
 	}
 
-	// Attacking
-	public void setAttackCollider(int stage)
-	{
-
-	}
-
 	protected void Animate()
 	{
 		var h = Input.GetAxis("Horizontal");
@@ -88,8 +82,8 @@ public class TeenPlayer : GenericPlayer {
 		if (body.velocity.sqrMagnitude < 0.01f)
 			body.velocity = Vector2.zero;
 			
-		if (h < 0 && facingRight || h > 0 && !facingRight)
-			this.Flip();
+		if (ShouldFlip(h) && !attacking)
+			Flip();
 	}
 
 }

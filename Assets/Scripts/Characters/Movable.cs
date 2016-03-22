@@ -13,6 +13,11 @@ public class Movable : MonoBehaviour {
 		facingRight = theScale.x > 0;
 	}
 
+	protected bool ShouldFlip(float h)
+	{
+		return h < 0 && facingRight || h > 0 && !facingRight;
+	}
+
 	protected void FaceRight()
 	{
 		if (!facingRight)

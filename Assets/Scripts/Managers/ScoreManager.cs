@@ -6,9 +6,7 @@ public class ScoreManager : MonoBehaviour {
 
 	private float playerScore;
 
-	public float minorScore = 10f;
-	public float mediumScore = 30f;
-	public float majorScore = 100f;
+	public float bodyHit;
 
 	private Text scoreUI; 
 
@@ -23,7 +21,12 @@ public class ScoreManager : MonoBehaviour {
 		scoreUI.text = playerScore.ToString();
 	}
 
-	public void addScore(float value)
+	public void HitBody()
+	{
+		AddScore(bodyHit);
+	}
+
+	public void AddScore(float value)
 	{
 		playerScore += value;
 
