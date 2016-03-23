@@ -62,6 +62,11 @@ public class Enemy : Movable {
 		
 	}
 
+	public bool IsDead()
+	{
+		return dead;
+	}
+
 	protected void CheckDead()
 	{
 		if (health <= 0)

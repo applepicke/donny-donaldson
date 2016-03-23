@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402776}
-  - 114: {fileID: 11478986}
+  - 114: {fileID: 11482938}
   m_Layer: 8
   m_Name: lightning
   m_TagString: Untagged
@@ -128,7 +128,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6004526, y: 3.2524161, z: 0}
+  m_LocalPosition: {x: 3.0845568, y: 2.8024936, z: 1.4736328}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 402776}
@@ -212,12 +212,14 @@ MonoBehaviour:
   bottomRight: {fileID: 184408}
   branchPrefab: {fileID: 148646, guid: 9787db022c51b974bb0574ac8f615ca3, type: 2}
   boltPrefab: {fileID: 104606, guid: bd83d4c488beb00499063c417f3f88eb, type: 2}
+  branches: []
   heightMin: 0
   heightMax: 5
   diagonal: 5
   minTime: 0
   maxTime: 8
---- !u!114 &11478986
+  time: 0
+--- !u!114 &11482938
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -225,18 +227,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 101792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e445393cb84d7f548aea5ece08895e07, type: 3}
+  m_Script: {fileID: 11500000, guid: 12a7c6c36f270d84bb6803cee9da12ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topLeft: {fileID: 178840}
-  bottomRight: {fileID: 180852}
-  branchPrefab: {fileID: 148646, guid: 9787db022c51b974bb0574ac8f615ca3, type: 2}
-  boltPrefab: {fileID: 104606, guid: bd83d4c488beb00499063c417f3f88eb, type: 2}
+  topLeft: {fileID: 0}
+  bottomRight: {fileID: 0}
+  branchPrefab: {fileID: 0}
+  boltPrefab: {fileID: 0}
   heightMin: 0
-  heightMax: 5
-  diagonal: 5
+  heightMax: 0
+  diagonal: 0
   minTime: 0
-  maxTime: 8
+  maxTime: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
