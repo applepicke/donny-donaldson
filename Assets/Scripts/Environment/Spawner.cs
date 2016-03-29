@@ -29,7 +29,11 @@ public class Spawner : MonoBehaviour {
 		if (delayCounter <= 0 && enemies.Count < perWave)
 		{
 			delayCounter = Random.Range(delay - variant, delay + variant);
+
 			var newEnemy = GameObject.Instantiate(enemyType);
+			var enemyTransform = newEnemy.GetComponent<Transform>();
+
+			enemyTransform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
 			enemies.Enqueue(newEnemy);
 		}
