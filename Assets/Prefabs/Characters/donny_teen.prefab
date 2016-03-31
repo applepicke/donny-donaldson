@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cameraFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - 61: {fileID: 6163068}
   - 58: {fileID: 5882268}
   - 95: {fileID: 9526260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: donny_teen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 438862}
   - 61: {fileID: 6134200}
   - 114: {fileID: 11479392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: jabAttack
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 413346}
   - 61: {fileID: 6139554}
   - 114: {fileID: 11465446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: overheadAttack
   m_TagString: Weapon
   m_Icon: {fileID: 0}
