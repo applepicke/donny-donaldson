@@ -32,7 +32,7 @@ public class Enemy : Movable {
 	protected void Start () {
 		scoreManager = GameObject.Find("scoreManager").GetComponent<ScoreManager>();
 		body = gameObject.GetComponent<Rigidbody2D>();
-		player = GameObject.Find("donny_teen");
+		player = GameObject.Find("donny");
 		animator = gameObject.GetComponent<Animator>();
 
 		weapons = GameObject.FindGameObjectsWithTag("Weapon");

@@ -81,9 +81,12 @@ public class TeenPlayer : GenericPlayer {
 
 		if (body.velocity.sqrMagnitude < 0.01f)
 			body.velocity = Vector2.zero;
-			
-		if (ShouldFlip(h) && !attacking)
+
+		if (ShouldFlip(h))
+		{
 			Flip();
+		}
+			
 	}
 
 }

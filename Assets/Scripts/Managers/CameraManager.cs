@@ -14,7 +14,7 @@ public class CameraManager : MonoBehaviour
 	void Start()
 	{
 		camera = gameObject.GetComponent<Camera>();
-		target = GameObject.Find("donny_teen").GetComponent<Transform>().Find("cameraFollow");
+		target = GameObject.Find("donny").GetComponent<Transform>().Find("cameraFollow");
 	}
 
 	// Update is called once per frame
@@ -35,7 +35,7 @@ public class CameraManager : MonoBehaviour
 
 	public void LookUp()
 	{
-		verticalOffset = 2f;
+		verticalOffset = 2.1f;
 	}
 
 	public void LookNormal()
@@ -45,6 +45,6 @@ public class CameraManager : MonoBehaviour
 
 	public void LookDown()
 	{
-		verticalOffset = -2f;
+		verticalOffset = -3.5f;
 	}
 }
