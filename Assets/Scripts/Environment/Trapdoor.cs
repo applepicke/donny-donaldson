@@ -9,23 +9,30 @@ public class Trapdoor : MonoBehaviour {
 
 	//Objects
 	private ConfigManager config;
+	private ActivationManager activation;
 	private Animator animator;
 	private GameObject player;
+	
 
 	// Use this for initialization
 	void Start () {
 		animator = gameObject.GetComponent<Animator>();
 		config = GameObject.Find("configManager").GetComponent<ConfigManager>();
+		activation = GameObject.Find("activationManager").GetComponent<ActivationManager>();
 		player = GameObject.Find("donny");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (IsPlayerInProximity())
+		if (IsPlayerInProximity() && !open)
 		{
+			activation.ShowButton();
 			CheckOpening();
 		}
+		else
+			activation.HideButton();
+		
 	}
 
 	private void CheckOpening()
