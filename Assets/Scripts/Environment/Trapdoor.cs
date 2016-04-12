@@ -4,7 +4,7 @@ using InControl;
 
 public class Trapdoor : MonoBehaviour {
 
-	private float timeHeld = 0f;
+	
 	private bool open = false;
 
 	//Objects
@@ -17,6 +17,7 @@ public class Trapdoor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = gameObject.GetComponent<Animator>();
+
 		config = GameObject.Find("configManager").GetComponent<ConfigManager>();
 		activation = GameObject.Find("activationManager").GetComponent<ActivationManager>();
 		player = GameObject.Find("donny");
@@ -25,29 +26,25 @@ public class Trapdoor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (IsPlayerInProximity() && !open)
+		if (IsPlayerInProximity())
 		{
-			activation.ShowButton();
-			CheckOpening();
+			if (!open)
+			{
+				activation.ShowButton();
+				if (activation.CheckButton(InputManager.ActiveDevice.Action2, config.activationTime))
+					Open();
+			}
+			else {
+				activation.ShowArrow();
+				if (activation.CheckStick(InputManager.ActiveDevice.LeftStickDown, config.dropDownTime))
+					Drop();
+			}
+				
 		}
-		else
+
+		if (open || !IsPlayerInProximity())
 			activation.HideButton();
 		
-	}
-
-	private void CheckOpening()
-	{
-		if (InputManager.ActiveDevice.Action2.IsPressed)
-			timeHeld += Time.deltaTime;
-		else
-			timeHeld = 0f;
-
-		if (timeHeld >= config.keyHoldTime)
-		{
-			timeHeld = 0f;
-			Open();
-		}
-
 	}
 
 	private bool IsPlayerInProximity()
@@ -59,6 +56,12 @@ public class Trapdoor : MonoBehaviour {
 	{
 		open = false;
 		animator.CrossFade("trapdoor_closed", 0f);
+	}
+
+	public void Drop()
+	{
+		var pt = player.GetComponent<Transform>();
+		pt.position = new Vector2(pt.position.x, pt.position.y - 1);
 	}
 
 	public void Open()

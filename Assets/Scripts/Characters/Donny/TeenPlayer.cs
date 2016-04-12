@@ -27,8 +27,8 @@ public class TeenPlayer : GenericPlayer {
 		var v = Input.GetAxis("Vertical");
 
 		var is_running = h < 0.5f && h > -0.5f;
-		var is_looking_up = v > 0.5f;
-		var is_looking_down = v < -0.5f;
+		var is_looking_up = v > 0.999f;
+		var is_looking_down = v < -0.999f;
 
 		// Look up 
 		if (animator.GetCurrentAnimatorStateInfo(0).IsName("donny_look_up"))

@@ -4,7 +4,8 @@ using System.Collections;
 public class ConfigManager : MonoBehaviour {
 
 	// Activating environment
-	public float keyHoldTime;
+	public float activationTime;
+	public float dropDownTime;
 	public float activationRange;
 
 	// Use this for initialization

@@ -39,7 +39,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711a1327de07d2f468d3cfb9e18748b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyHoldTime: 0.5
+  activationTime: 0.3
+  dropDownTime: 0.2
   activationRange: 0.75
 --- !u!1001 &100100000
 Prefab:
