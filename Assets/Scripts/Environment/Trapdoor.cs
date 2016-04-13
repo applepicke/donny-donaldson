@@ -9,7 +9,7 @@ public class Trapdoor : MonoBehaviour {
 
 	//Objects
 	private ConfigManager config;
-	private ActivationManager activation;
+	private IdeaManager ideaManager;
 	private Animator animator;
 	private GameObject player;
 	
@@ -19,7 +19,7 @@ public class Trapdoor : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator>();
 
 		config = GameObject.Find("configManager").GetComponent<ConfigManager>();
-		activation = GameObject.Find("activationManager").GetComponent<ActivationManager>();
+		ideaManager = GameObject.Find("ideaManager").GetComponent<IdeaManager>();
 		player = GameObject.Find("donny");
 	}
 	
@@ -30,20 +30,19 @@ public class Trapdoor : MonoBehaviour {
 		{
 			if (!open)
 			{
-				activation.ShowButton();
-				if (activation.CheckButton(InputManager.ActiveDevice.Action2, config.activationTime))
+				ideaManager.activateIdea.Show();
+				if (ideaManager.activateIdea.CheckButton(InputManager.ActiveDevice.Action2, config.activationTime))
 					Open();
 			}
 			else {
-				activation.ShowArrow();
-				if (activation.CheckStick(InputManager.ActiveDevice.LeftStickDown, config.dropDownTime))
+				ideaManager.downIdea.Show();
+				if (ideaManager.downIdea.CheckStick(InputManager.ActiveDevice.LeftStickDown, config.dropDownTime))
 					Drop();
 			}
 				
 		}
-
-		if (open || !IsPlayerInProximity())
-			activation.HideButton();
+		else
+			ideaManager.HideAll();
 		
 	}
 
@@ -62,11 +61,13 @@ public class Trapdoor : MonoBehaviour {
 	{
 		var pt = player.GetComponent<Transform>();
 		pt.position = new Vector2(pt.position.x, pt.position.y - 1);
+		ideaManager.HideAll();
 	}
 
 	public void Open()
 	{
 		open = true;
 		animator.CrossFade("trapdoor_open", 0f);
+		ideaManager.HideAll();
 	}
 }
