@@ -10,7 +10,6 @@ public class Idea : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("donny");
-		Hide();
 	}
 	
 	// Update is called once per frame

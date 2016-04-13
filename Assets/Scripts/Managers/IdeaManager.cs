@@ -21,6 +21,8 @@ public class IdeaManager : MonoBehaviour {
 
 		downIdea = GameObject.Find("downIdea").GetComponent<Idea>();
 		activateIdea = GameObject.Find("activateIdea").GetComponent<Idea>();
+
+		HideAll();
 	}
 	
 	// Update is called once per frame
