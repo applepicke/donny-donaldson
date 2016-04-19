@@ -13,16 +13,22 @@ public class IdeaManager : MonoBehaviour {
 	public Idea downIdea;
 	[HideInInspector]
 	public Idea activateIdea;
+	[HideInInspector]
+	public Idea upIdea;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("donny");
 		config = GameObject.Find("configManager").GetComponent<ConfigManager>();
 
+		HideAll();
+	}
+
+	void Awake()
+	{
 		downIdea = GameObject.Find("downIdea").GetComponent<Idea>();
 		activateIdea = GameObject.Find("activateIdea").GetComponent<Idea>();
-
-		HideAll();
+		upIdea = GameObject.Find("upIdea").GetComponent<Idea>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +40,7 @@ public class IdeaManager : MonoBehaviour {
 	{
 		downIdea.Hide();
 		activateIdea.Hide();
+		upIdea.Hide();
 	}
 
 	

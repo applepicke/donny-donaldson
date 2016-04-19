@@ -27,7 +27,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: trapdoor_open
+  m_Name: open
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -50,7 +50,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: trapdoor_closed
+  m_Name: closed
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

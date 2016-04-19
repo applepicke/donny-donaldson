@@ -13,4 +13,5 @@ public class Ranges : Object {
 
 		return Mathf.Abs(x1 - x2) < distance && Mathf.Abs(y1 - y2) < distance;
 	}
+
 }

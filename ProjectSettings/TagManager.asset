@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Weapon
   - Idea
+  - Room
   layers:
   - Default
   - TransparentFX

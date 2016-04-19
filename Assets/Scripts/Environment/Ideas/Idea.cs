@@ -25,9 +25,6 @@ public class Idea : MonoBehaviour {
 	public void Show()
 	{
 		var targetTransform = player.GetComponent<Transform>().Find("ideaSpace");
-
-		Debug.Log(gameObject);
-
 		transform.position = new Vector3(targetTransform.position.x, targetTransform.position.y, 0);
 		gameObject.SetActive(true);
 	}
