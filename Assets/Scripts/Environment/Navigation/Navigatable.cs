@@ -36,6 +36,8 @@ public class Navigatable : MonoBehaviour
 	// Update is called once per frame
 	protected void Update()
 	{
+		if (!navManager.InRoom(room))
+			return;
 
 		if (IsPlayerInProximity())
 		{
@@ -60,7 +62,7 @@ public class Navigatable : MonoBehaviour
 	private bool IsPlayerInProximity()
 	{
 		var inRange = Ranges.InRange(player.GetComponent<Transform>(), transform, config.activationRange);
-		return navManager.InRoom(room) && inRange;
+		return inRange;
 	}
 
 	public void Close()
