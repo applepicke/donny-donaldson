@@ -8,7 +8,7 @@ public class Idea : MonoBehaviour {
 	private GameObject player;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		player = GameObject.Find("donny");
 	}
 	
