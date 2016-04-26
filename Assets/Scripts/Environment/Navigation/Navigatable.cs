@@ -8,6 +8,7 @@ public class Navigatable : MonoBehaviour
 	public GameObject room;
 
 	private bool open = false;
+	private bool wasInProximity = false;
 	protected Idea activateIdea;
 	protected Idea navigateIdea;
 
@@ -36,11 +37,13 @@ public class Navigatable : MonoBehaviour
 	// Update is called once per frame
 	protected void Update()
 	{
+
 		if (!navManager.InRoom(room))
 			return;
 
 		if (IsPlayerInProximity())
 		{
+			wasInProximity = true;
 
 			if (!open)
 			{
@@ -54,8 +57,11 @@ public class Navigatable : MonoBehaviour
 					Transport();
 			}
 		}
-		else
+		else if (wasInProximity)
+		{
 			ideaManager.HideAll();
+			wasInProximity = false;
+		}
 
 	}
 
