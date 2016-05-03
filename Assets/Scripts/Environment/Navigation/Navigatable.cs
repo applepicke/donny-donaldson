@@ -2,27 +2,16 @@
 using System.Collections;
 using InControl;
 
-public class Navigatable : MonoBehaviour
+public class Navigatable : Activatable
 {
 	public GameObject destination;
-	public GameObject room;
 
-	private bool open = false;
-	private bool wasInProximity = false;
-	protected Idea activateIdea;
 	protected Idea navigateIdea;
 
-	//Objects
-	protected IdeaManager ideaManager;
-	protected ConfigManager config;
-	protected Animator animator;
-	protected GameObject player;
-	protected NavigationManager navManager;
-
-
 	// Use this for initialization
-	protected void Start()
+	protected new void Start()
 	{
+		base.Start();
 		animator = gameObject.GetComponent<Animator>();
 
 		config = GameObject.Find("configManager").GetComponent<ConfigManager>();
@@ -35,34 +24,21 @@ public class Navigatable : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	protected void Update()
+	protected new void Update()
 	{
-
-		if (!navManager.InRoom(room))
-			return;
+		base.Update();
 
 		if (IsPlayerInProximity())
 		{
 			wasInProximity = true;
 
-			if (!open)
+			if (open)
 			{
-				activateIdea.Show();
-				if (activateIdea.CheckButton(InputManager.ActiveDevice.Action2, config.activationTime))
-					Open();
-			}
-			else {
 				navigateIdea.Show();
 				if (navigateIdea.CheckStick(GetStick(), config.dropDownTime))
 					Transport();
 			}
 		}
-		else if (wasInProximity)
-		{
-			ideaManager.HideAll();
-			wasInProximity = false;
-		}
-
 	}
 
 	private bool IsPlayerInProximity()
@@ -71,21 +47,8 @@ public class Navigatable : MonoBehaviour
 		return inRange;
 	}
 
-	public void Close()
+	public override void PostOpen()
 	{
-		open = false;
-		animator.CrossFade("closed", 0f);
-	}
-
-	public void Open()
-	{
-		if (open)
-			return;
-
-		open = true;
-		animator.CrossFade("open", 0f);
-		ideaManager.HideAll();
-
 		GetDestination().Open();
 	}
 
