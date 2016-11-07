@@ -3,6 +3,8 @@ using System.Collections;
 using System;
 using InControl;
 
+enum Weapons { melee, gun };
+
 public class GenericPlayer : Movable
 {
 	// Animations
@@ -21,6 +23,9 @@ public class GenericPlayer : Movable
 	protected bool secondJump = false;
 	protected bool landing = false;
 	private Transform groundCheck;
+
+    // Current Selected Weapon
+    private Weapons currentWeapon;
 
 	// Sword Attack
 	public float attackChargeTime = 0f;
@@ -43,7 +48,8 @@ public class GenericPlayer : Movable
 		groundCheck = transform.Find("groundCheck");
 		animator = transform.GetComponent<Animator>();
 		cameraManager = GameObject.Find("player_camera").GetComponent<CameraManager>();
-	}
+        currentWeapon = Weapons.gun;
+    }
 
 	void Awake()
 	{
@@ -53,7 +59,12 @@ public class GenericPlayer : Movable
 	// Update is called once per frame
 	protected void FixedUpdate()
 	{
-		if (IsGrounded())
+        if (InputManager.ActiveDevice.DPadRight.WasPressed)
+        {
+            currentWeapon = (Weapons)(((int)currentWeapon + 1) % 2);
+        }
+
+        if (IsGrounded())
 		{
 			if (firstJump)
 				landing = true;
@@ -101,27 +112,70 @@ public class GenericPlayer : Movable
 		animator.Play("donny_attack_overhead", -1, 0f);
 	}
 
-	protected void AttackJab()
+    protected void ReadyGun()
+    {
+        animator.Play("donny_ready_gun", -1, 0f);
+    }
+
+    protected void FireGun()
+    {
+        animator.Play("donny_fire_gun", -1, 0f);
+
+        float dir = transform.localScale.x;
+
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x+dir, transform.position.y), new Vector2(dir,0.0f));
+        if (hit.collider != null)
+        {
+            if (hit.collider.gameObject.tag == "Zombie")
+            {
+                ((Enemy)hit.collider.gameObject.GetComponent("Zombie")).health = 0;
+            }
+        }
+    }
+
+    protected void HolsterGun()
+    {
+        animator.Play("donny_holster", -1, 0f);
+    }
+
+    protected void AttackJab()
 	{
 		animator.Play("donny_attack_jab", -1, 0f);
 	}
 
-	protected void CheckAttack()
-	{
+	virtual protected void CheckAttack()
+    { 
 
-		if (InputManager.ActiveDevice.Action3.WasPressed)
-			attackCharge = 0f;
-		else
-			attackCharge += Time.deltaTime;
+        if (InputManager.ActiveDevice.Action3.WasPressed)
+        {
+            attacking = true;
+
+            attackCharge = 0f;
+            if (currentWeapon == Weapons.gun)
+            {
+                ReadyGun();
+            }
+        }
+        else
+            attackCharge += Time.deltaTime;
 
 		if (InputManager.ActiveDevice.Action3.WasReleased)
 		{
-			attacking = true;
-
-			if (attackCharge >= attackChargeTime)
-				AttackOverhead();
-			else if (!overheadAttack)
-				AttackJab();
+            if (currentWeapon == Weapons.melee)
+            {
+                if (attackCharge >= attackChargeTime)
+                    AttackOverhead();
+                else
+                    AttackJab();
+            }
+            else
+            {
+                // its the gun!
+                if (attackCharge >= attackChargeTime)
+                    FireGun();
+                else
+                    HolsterGun();
+            }
 		}
 	}
 
