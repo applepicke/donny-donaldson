@@ -48,7 +48,7 @@ public class GenericPlayer : Movable
 		groundCheck = transform.Find("groundCheck");
 		animator = transform.GetComponent<Animator>();
 		cameraManager = GameObject.Find("player_camera").GetComponent<CameraManager>();
-        currentWeapon = Weapons.gun;
+        currentWeapon = Weapons.melee;
     }
 
 	void Awake()
